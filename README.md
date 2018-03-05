@@ -2,11 +2,11 @@
 _Configuring a Linux server to host a web app securely._
 
 # Server details
-IP address: ~~`18.219.251.159`~~
+IP address: `18.219.251.159`
 
 SSH port: `2200`
 
-URL: ~~`http://ec2-18-219-251-159.us-east-2.compute.amazonaws.com`~~
+URL: `http://ec2-18-219-251-159.us-east-2.compute.amazonaws.com`
 
 
 # Configuration changes
