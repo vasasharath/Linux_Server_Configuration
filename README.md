@@ -141,7 +141,7 @@ Clone the Catalog app from Github
   application.secret_key = 'supersecretkey'
 
   ```
-  - Rename application.py to __init__.py `mv application.py __init__.py`
+  - Rename project.py to __init__.py `mv project.py __init__.py`
   
 Install virtual environment
   - Install the virtual environment `sudo pip install virtualenv`
@@ -197,7 +197,7 @@ Install and configure PostgreSQL
   - `GRANT ALL ON SCHEMA public TO catalog;`
   - `\q`
   - `exit`
-  - Change create engine line in your `__init__.py` and `database_setup.py` to: 
+  - Change create engine line in your `__init__.py`,`data_import.py` and `database_setup.py` to: 
   `engine = create_engine('postgresql://catalog:password@localhost/catalog')`
   - `python /var/www/catalog/database_setup.py`
   - Make sure no remote connections to the database are allowed. Check if the contents of this file `sudo nano /etc/postgresql/9.3/main/pg_hba.conf` looks like this:
@@ -211,4 +211,4 @@ Install and configure PostgreSQL
 16. Restart Apache 
   - `sudo service apache2 restart`
   
-17. Visit site at [http://18.219.251.159](http://18.219.251.159)
+17. Visit site at [http://ec2-18-219-251-159.us-east-2.compute.amazonaws.com](http://18.219.251.159http://ec2-18-219-251-159.us-east-2.compute.amazonaws.com)
