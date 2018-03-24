@@ -144,13 +144,13 @@ Clone the Catalog app from Github
   - Rename project.py to __init__.py `mv project.py __init__.py`
   
 Install virtual environment
+  - Install pip with `apt-get install python-pip`
   - Install the virtual environment `sudo pip install virtualenv`
   - Create a new virtual environment with `sudo virtualenv venv`
   - Activate the virutal environment `source venv/bin/activate`
   - Change permissions `sudo chmod -R 777 venv`
 
 Install Flask and other dependencies
-  - Install pip with `apt-get install python-pip`
   - Install Flask `pip install Flask`
   - Install other project dependencies `pip install httplib2 oauth2client sqlalchemy psycopg2 sqlalchemy_utils`
 
